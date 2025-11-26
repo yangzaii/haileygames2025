@@ -1,5 +1,4 @@
 import type { Language } from '@/i18n/config'
-type AvailableLanguage = 'en' | 'zh'
 
 interface Translation {
   title: string
@@ -11,7 +10,7 @@ interface Translation {
   toc: string
 }
 
-export const ui: Record<Language, Translation> = {
+export const ui: Record<'en' | 'zh', Translation> = {
   'en': {
     title: 'Hailey Yang',
     subtitle: 'Games: where the world meets.',
