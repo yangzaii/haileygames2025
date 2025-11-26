@@ -1,4 +1,5 @@
 import type { Language } from '@/i18n/config'
+type AvailableLanguage = 'en' | 'zh'
 
 interface Translation {
   title: string
