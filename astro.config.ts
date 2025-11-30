@@ -4,7 +4,7 @@ import sitemap from '@astrojs/sitemap'
 import Compress from 'astro-compress'
 import { defineConfig } from 'astro/config'
 import rehypeKatex from 'rehype-katex'
-import rehypeMermaid from 'rehype-mermaid'
+//import rehypeMermaid from 'rehype-mermaid'
 import rehypeSlug from 'rehype-slug'
 import remarkDirective from 'remark-directive'
 import remarkMath from 'remark-math'
@@ -70,7 +70,7 @@ export default defineConfig({
     ],
     rehypePlugins: [
       rehypeKatex,
-      [rehypeMermaid, { strategy: 'pre-mermaid' }],
+      //[rehypeMermaid, { strategy: 'pre-mermaid' }],
       rehypeSlug,
       rehypeHeadingAnchor,
       rehypeImageProcessor,
